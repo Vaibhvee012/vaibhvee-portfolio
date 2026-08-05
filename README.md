@@ -62,7 +62,7 @@ GitHub: **https://github.com/Vaibhvee012**
 
 LinkedIn: **https://linkedin.com/in/<your-linkedin-username>**
 
-Email: your-email@example.com
+Email: vaibhveeprakash25@gmail.com
 
 ## Author
 
