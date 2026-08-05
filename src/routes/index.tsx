@@ -289,15 +289,15 @@ function Index() {
                 <Linkedin className="h-5 w-5 transition-transform duration-500 group-hover:rotate-12" />
                 LinkedIn
               </a>
-              <Button asChild variant="outline" className="rounded-full">
-  <a
-    href="/Resume_VAIBHVEE_PRAKASH.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Resume
-  </a>
-</Button>
+             <a
+             href="/Resume_VAIBHVEE_PRAKASH.pdf"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="group inline-flex items-center gap-3 rounded-full border border-primary/50 px-8 py-4 text-sm font-medium glass neon-btn transition-all duration-500 hover:-translate-y-1"
+             >
+              <FileText className="h-5 w-5 text-neon-violet transition-transform duration-500 group-hover:-rotate-6" />
+              Resume
+              </a>
             </div>
           </Reveal>
 
