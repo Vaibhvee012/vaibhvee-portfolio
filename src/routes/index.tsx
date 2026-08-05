@@ -289,12 +289,15 @@ function Index() {
                 <Linkedin className="h-5 w-5 transition-transform duration-500 group-hover:rotate-12" />
                 LinkedIn
               </a>
-              <a
-              href="/Resume_VAIBHVEE_PRAKASH.pdf"
-              target="_blank"
-              rel="noopener noreferrer">
-              Resume
-              </a>
+              <Button asChild variant="outline" className="rounded-full">
+  <a
+    href="/Resume_VAIBHVEE_PRAKASH.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Resume
+  </a>
+</Button>
             </div>
           </Reveal>
 
