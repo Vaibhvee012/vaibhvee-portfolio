@@ -290,13 +290,10 @@ function Index() {
                 LinkedIn
               </a>
               <a
-                href={resumeAsset.url}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group inline-flex w-full items-center justify-center gap-3 rounded-full px-8 py-4 text-sm font-medium glass neon-btn transition-all duration-500 hover:-translate-y-1 sm:w-auto"
-              >
-                <FileText className="h-5 w-5 transition-transform duration-500 group-hover:rotate-12" />
-                Resume
+              href="/Resume_VAIBHVEE_PRAKASH.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Resume
               </a>
             </div>
           </Reveal>
