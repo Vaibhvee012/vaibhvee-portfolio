@@ -30,7 +30,7 @@ This portfolio was built to highlight my technical skills, featured projects, an
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/vaibhvee-portfolio.git
+git clone https://github.com/Vaibhvee012/vaibhvee-portfolio.git
 cd vaibhvee-portfolio
 ```
 
@@ -58,9 +58,9 @@ https://vaibhvee-portfolio.vercel.app
 
 ## Contact
 
-GitHub: https://github.com/<your-username>
+GitHub: **https://github.com/Vaibhvee012**
 
-LinkedIn: https://linkedin.com/in/<your-linkedin-username>
+LinkedIn: **https://linkedin.com/in/<your-linkedin-username>**
 
 Email: your-email@example.com
 
