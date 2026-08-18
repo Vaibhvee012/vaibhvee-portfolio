@@ -10,6 +10,7 @@ import {
   BrainCircuit,
   Library,
   Briefcase,
+  Wallet,
 } from "lucide-react";
 import { GalaxySphere } from "@/components/GalaxySphere";
 import { Reveal } from "@/components/Reveal";
@@ -67,24 +68,24 @@ const skillGroups = [
 const projects = [
   {
     icon: BrainCircuit,
+    title: "Interviewly AI — AI Job Preparation Platform",
+    blurb:
+      "Production-ready full-stack GenAI platform built with React and Node.js to streamline job preparation — featuring JWT authentication, resume processing, job description analysis, skill-gap detection, AI-generated interview questions and ATS-optimised resume generation using Gemini AI and Puppeteer.",
+    tags: ["React", "Node.js", "Gemini AI", "JWT"],
+  },
+  {
+    icon: Wallet,
+    title: "SpendSense — Personal Finance Intelligence System",
+    blurb:
+      "Full-stack personal finance platform built with the MERN stack to help users manage income and expenses, track transactions, analyse spending patterns and monitor their financial activity through an intuitive and responsive dashboard.",
+    tags: ["MongoDB", "Express", "React", "Node"],
+  },
+  {
+    icon: BrainCircuit,
     title: "Grade Change Intelligence in Paper Making",
     blurb:
       "Full-stack AI system using Python, Random Forest, FastAPI and React to predict Basis Weight deviations during paper grade transitions — with explainable recommendations, correlation analysis, interactive dashboards and operator feedback, reaching 95% prediction accuracy.",
     tags: ["Python", "FastAPI", "React", "ML"],
-  },
-  {
-    icon: Library,
-    title: "Library Management System",
-    blurb:
-      "Full-stack library platform built with C, ASP.NET, SQL Server, HTML, CSS and JavaScript — secure authentication, catalog management, issue/return tracking, CRUD and role-based access through a responsive interface.",
-    tags: ["ASP.NET", "SQL Server", "JavaScript"],
-  },
-  {
-    icon: Briefcase,
-    title: "MERN Stack Web Apps — Codveda Internship",
-    blurb:
-      "Responsive full-stack applications with scalable architecture, secure RESTful APIs, MongoDB integration and optimised React components following clean, maintainable practices.",
-    tags: ["MongoDB", "Express", "React", "Node"],
   },
 ];
 
