@@ -11,6 +11,7 @@ import {
   Library,
   Briefcase,
   Wallet,
+  Sparkles,
 } from "lucide-react";
 import { GalaxySphere } from "@/components/GalaxySphere";
 import { Reveal } from "@/components/Reveal";
@@ -67,7 +68,7 @@ const skillGroups = [
 
 const projects = [
   {
-    icon: BrainCircuit,
+    icon: Sparkles,
     title: "Interviewly AI — AI Job Preparation Platform",
     blurb:
       "Production-ready full-stack GenAI platform built with React and Node.js to streamline job preparation — featuring JWT authentication, resume processing, job description analysis, skill-gap detection, AI-generated interview questions and ATS-optimised resume generation using Gemini AI and Puppeteer.",
