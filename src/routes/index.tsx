@@ -10,8 +10,15 @@ import {
   BrainCircuit,
   Library,
   Briefcase,
+  ShieldCheck,
+  ShieldAlert,
+  ScanSearch,
+  Swords,
+  UserSearch,
+  Mic,
   Wallet,
-  Sparkles,
+  ArrowUpRight,
+  Globe,
 } from "lucide-react";
 import { GalaxySphere } from "@/components/GalaxySphere";
 import { Reveal } from "@/components/Reveal";
@@ -40,52 +47,92 @@ export const Route = createFileRoute("/")({
 });
 
 const skillGroups = [
-  { title: "Languages", items: ["Java", "C++", "C", "Python", "JavaScript", "SQL"] },
-  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Postman", "MongoDB", "Docker"] },
+  { title: "Languages", items: ["Java", "C++", "C", "Python", "JavaScript", "TypeScript", "SQL"] },
+  { title: "Tools", items: ["Git", "GitHub", "VS Code", "Postman", "ESLint", "Vercel", "Render"] },
   {
     title: "Skills",
-    items: [
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "Spring Boot",
-      "REST APIs",
-    ],
+    items: ["HTML", "CSS", "Tailwind CSS", "React.js", "Node.js", "Express.js", "REST APIs"],
+  },
+  { title: "Databases", items: ["MongoDB", "PostgreSQL", "Redis"] },
+  {
+    title: "AI / GenAI",
+    items: ["Gemini API", "LangGraph", "LangChain", "RAG", "AI Agents"],
   },
   {
     title: "Concepts",
     items: [
+      "Data Structures & Algorithms",
       "Object-Oriented Programming",
-      "Computer Networks",
-      "Operating Systems",
       "Database Management Systems",
+      "Operating Systems",
+      "Computer Networks",
     ],
   },
 ];
 
 const projects = [
   {
-    icon: Sparkles,
-    title: "Interviewly AI — AI Job Preparation Platform",
+    icon: ShieldCheck,
+    title: "CloudShield",
+    link: "https://github.com/Vaibhvee012/CloudShield",
     blurb:
-      "Production-ready full-stack GenAI platform built with React and Node.js to streamline job preparation — featuring JWT authentication, resume processing, job description analysis, skill-gap detection, AI-generated interview questions and ATS-optimised resume generation using Gemini AI and Puppeteer.",
-    tags: ["React", "Node.js", "Gemini AI", "JWT"],
+      "Cloud security posture management platform that monitors AWS resources, identifies security risks, evaluates cloud security posture and provides actionable recommendations to improve infrastructure security.",
+    tags: ["AWS", "Node.js", "React", "PostgreSQL"],
+  },
+  {
+    icon: Mic,
+    title: "Interviewly AI",
+    link: "https://interviewly-ai-zeta.vercel.app/",
+    blurb:
+      "AI-powered interview preparation platform that simulates technical interviews, generates personalized questions, evaluates responses and provides feedback to help users improve their interview performance.",
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Gemini API", "Puppeteer"],
+  },
+  {
+    icon: ScanSearch,
+    title: "CodeScribe",
+    link: "https://code-scribe-ashen.vercel.app/",
+    blurb:
+      "AI-powered code analysis platform that reviews source code, identifies quality and security issues, and provides intelligent recommendations to help developers write cleaner and more reliable code.",
+    tags: ["React", "Node.js", "Gemini", "MongoDB"],
+  },
+  {
+    icon: ShieldAlert,
+    title: "Kavach",
+    link: "https://d29nfc5b7f05b1.cloudfront.net",
+    blurb:
+      "Cybersecurity platform designed to identify vulnerabilities, analyze application security risks and help users understand and strengthen their overall security posture.",
+    tags: ["Python", "FastAPI", "React", "Security"],
+  },
+  {
+    icon: Swords,
+    title: "AI Battle Arena",
+    link: "https://github.com/Vaibhvee012/AI-Battle-Arena",
+    blurb:
+      "Multi-model AI platform that allows users to experiment with different AI models and agentic workflows, compare their responses and explore collaborative AI problem-solving.",
+    tags: ["Python", "LangGraph", "LLM", "Gemini", "Gorq", "Cohere"],
   },
   {
     icon: Wallet,
-    title: "SpendSense — Personal Finance Intelligence System",
+    title: "SpendSense",
+    link: "https://spendsense-zeta.vercel.app/",
     blurb:
-      "Full-stack personal finance platform built with the MERN stack to help users manage income and expenses, track transactions, analyse spending patterns and monitor their financial activity through an intuitive and responsive dashboard.",
-    tags: ["MongoDB", "Express", "React", "Node"],
+      "Personal finance management platform that helps users track income and expenses, set budgets, manage recurring transactions and visualize their spending patterns through an interactive dashboard.",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Chart.js"],
+  },
+  {
+    icon: UserSearch,
+    title: "AI-Powered Resume Screening & Job Recommendation System",
+    link: "https://github.com/Vaibhvee012/Resume-Screening-Job-Recommender",
+    blurb:
+      "AI-driven recruitment platform that analyzes resumes, evaluates candidate profiles against job requirements and recommends relevant job opportunities based on skills and qualifications.",
+    tags: ["Python", "ML", "React", "AI"],
   },
   {
     icon: BrainCircuit,
     title: "Grade Change Intelligence in Paper Making",
+    link: "https://grade-change-intelligence-two.vercel.app/",
     blurb:
-      "Full-stack AI system using Python, Random Forest, FastAPI and React to predict Basis Weight deviations during paper grade transitions — with explainable recommendations, correlation analysis, interactive dashboards and operator feedback, reaching 95% prediction accuracy.",
+      "AI-based industrial system that predicts basis weight deviations during paper grade transitions and provides insights and recommendations to help operators make better process decisions.",
     tags: ["Python", "FastAPI", "React", "ML"],
   },
 ];
@@ -137,8 +184,10 @@ function Index() {
           </Reveal>
           <Reveal delay={260}>
             <p className="mx-auto mt-6 max-w-xl text-balance text-base text-muted-foreground sm:text-lg">
-              Computer Science Engineering student specialising in cloud computing and automation —
-              building full-stack products with the MERN stack, Java and Python.
+              Aspiring Software Engineer and Developer with a strong foundation in Computer Science and 
+              a passion for building reliable, secure and user-focused applications. 
+              I enjoy turning complex problems into clean, scalable solutions and 
+              I am eager to grow through real-world engineering challenges.
             </p>
           </Reveal>
           <Reveal delay={340}>
@@ -205,7 +254,7 @@ function Index() {
           <Reveal delay={200}>
             <div className="mt-8 grid gap-5 sm:grid-cols-3">
               {[
-                { k: "2027", v: "B.Tech CSE — Cloud & Automation, VIT Bhopal" },
+                { k: "2027", v: "B.Tech CSE — Cloud Computing & Automation, Vellore Institute of Technology" },
                 { k: "3+", v: "Certifications: IBM, Google IT, Gen AI" },
                 { k: "MERN", v: "Full-stack internship experience" },
               ].map((stat) => (
@@ -234,27 +283,41 @@ function Index() {
           <div className="mt-14 space-y-6">
             {projects.map((project, i) => (
               <Reveal key={project.title} delay={i * 130}>
-                <article className="group grid gap-6 rounded-2xl p-7 glass neon-card transition-all duration-500 hover:-translate-y-1.5 sm:grid-cols-[auto_1fr]">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-secondary/40 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-[0_0_26px_-6px_var(--neon)]">
-                    <project.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold">{project.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {project.blurb}
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {project.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full bg-secondary/60 px-3 py-1 text-xs text-muted-foreground"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
+                <a
+  href={project.link}
+  target="_blank"
+  rel="noreferrer noopener"
+  aria-label={`Open ${project.title}`}
+  className="group relative grid cursor-pointer gap-6 rounded-2xl p-7 glass neon-card transition-all duration-500 hover:-translate-y-1.5 sm:grid-cols-[auto_1fr]"
+>
+  <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-secondary/40 transition-transform duration-500 group-hover:scale-110 group-hover:shadow-[0_0_26px_-6px_var(--neon)]">
+    <project.icon className="h-6 w-6 text-primary" />
+  </div>
+  <div>
+    <h3 className="pr-14 text-xl font-semibold">{project.title}</h3>
+    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+      {project.blurb}
+    </p>
+    <div className="mt-4 flex flex-wrap gap-2">
+      {project.tags.map((tag) => (
+        <span
+          key={tag}
+          className="rounded-full bg-secondary/60 px-3 py-1 text-xs text-muted-foreground"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  </div>
+  <span className="absolute right-5 top-5 inline-flex items-center gap-1 text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+  {project.link.includes("github.com") ? (
+    <Github className="h-4 w-4" />
+  ) : (
+    <Globe className="h-4 w-4" />
+  )}
+  <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+</span>
+</a>
               </Reveal>
             ))}
           </div>
